@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transformaciones Geométricas con Three.js</title>
+  <style>
+    body { margin: 0; }
+    canvas { display: block; }
+    .controls {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: rgba(255, 255, 255, 0.8);
+      padding: 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="controls">
+    <label for="translateX">Traslación X:</label>
+    <input type="range" id="translateX" min="-5" max="5" step="0.1" value="0"><br>
+
+    <label for="rotateY">Rotación Y:</label>
+    <input type="range" id="rotateY" min="0" max="360" step="1" value="0"><br>
+
+    <label for="scale">Escalado:</label>
+    <input type="range" id="scale" min="0.5" max="2" step="0.1" value="1">
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/three@latest/build/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
